@@ -66,65 +66,37 @@
 <div class="main ">
   <div class="login">
     <h2> Create a Account</h2>
-    <h5>Sign in</h5>
-    <form action="/login.html"id="login" method="post">
+    
+    <form action="login.html" id ="form "onsubmit="return validate();">
       <label>First Name:</label>
       <br>
-      <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+      <input type="text" name="fname" id="fname" placeholder="Enter your first name">
       <br><br>
       <label>Last Name:</label>
       <br>
-      <input type="text" name="lname" id="lname" placeholder="Enter your last name"required>
+      <input type="text" name="lname" id="lname" placeholder="Enter your last name">
       <br><br>
-      <label> User name:</label>
+      <label>Email:</label>
       <br>
-      <input type="text" name="username" id="username" placeholder="Enter your User name">
+      <input type="text" name="email" id="email" placeholder="Enter email Id">
       <br><br>
-      <label> Phone Number:</label>
+      <label>Phone Number:</label>
       <br>
-      <input type="text" name="phone" id="phone" placeholder="Enter your Phone number">
+      <input type="text" name="phone" id="phone" placeholder="Enter phonenumber">
       <br><br>
-      <label> Password:</label>
+      <label>Username:</label>
       <br>
-      <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
+      <input type="text" name="uname" id="uname" placeholder="Enter Username">
       <br><br>
-      <label>Gender</label>
-     <br>
-      &nbsp;&nbsp;&nbsp;
-      <input type="radio"name="Gender"id="male">
-      &nbsp;
-     <span id="male">Male</span>
-     &nbsp;&nbsp;&nbsp;&nbsp;
-     <input type="radio"name="Gender"id="female">
-     &nbsp;
-     <span id="female">Female</span>
-     &nbsp;&nbsp;&nbsp;&nbsp;
-     <input type="radio"name="Gender"id="other">
-     &nbsp;
-     <span id="other">Other</span>
-     <br><br>
-     <label>Language known:</label>
-     <br>
-     &nbsp;&nbsp;&nbsp;
-     <input type="checkbox"name="lang"
-     id="Hindi">
-     &nbsp;
-     <span id="hindi">Hindi</span>
-     &nbsp;&nbsp;&nbsp;&nbsp;
-     <input type="checkbox"name="lang"
-     id="eng">
-     &nbsp;
-     <span id="eng">English</span>
-     &nbsp;&nbsp;&nbsp;&nbsp;
-     <input type="checkbox"name="lang"
-     id="mal">
-     &nbsp;
-     <span id="mal">Malayalam</span>
-     <br><br>
+      <label>Password:</label>
+      <br>
+      <input type="password" name="pwd" id="pwd" placeholder="Enter password">
+      <br><br>
+    
       
-             <input type="submit" value="submit"
-             name="submit" id="submit">
-             <br><br>
+      <input type="submit" value="submit"
+      name="submit" id="submit">
+      <label for="error" id="error"></label>
       
            
      
@@ -194,5 +166,6 @@
 </div>
 
 <script src="form.js"></script>
+
 </body>
 </html>
