@@ -5,7 +5,7 @@ function validateUser()
 {
   if(uname.value=="")
      {
-        error.innerHTML="The email id is in valid recheck the format";
+        error.innerHTML="The Username is not valid";
         error.style.color="red";
         phone.style.border="2px solid red";
         return false;
@@ -28,7 +28,7 @@ function validateUse()
         return validatePwd();
     }
     else if(value.pwd.length<5) {
-        error.innerHTML="The username so small";
+        error.innerHTML="The password is short";
         error.style.color="orange";
         pwd.style.border="2px solid orange";
         return false; 
@@ -36,7 +36,7 @@ function validateUse()
     }
     else
     {
-        error.innerHTML="The username is not valid";
+        error.innerHTML="Some thing is not right with password";
         error.style.color="red";
         pwd.style.border="2px solid red";
         return false; 
